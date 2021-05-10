@@ -36,49 +36,51 @@ body{
             hsl(60,100%,50%) 25%,
             hsl(60,100%,30%) 70%,
             hsl(60,100%,1%)); 
-    animation:  botax 2s   alternate  infinite ease-in ,  botay 2s  alternate  infinite ease-in  ;
+    animation:  /*  botax 0.1s   alternate  infinite ease-in  ,  */ botay 3s  alternate  infinite ease-in  ;
   }
   @keyframes botay{
     0% {
-        /* bottom:150px; */
+        
         transform: translateY(-220px);
         height: 100px;
       }
-    /*  40%{
-        transform: translateY(-30px); 
-       /*  bottom: 10px; 
-    } */
-      50% {
+      
+    45%{
+    transform: translateY(-50px); 
+    height: 100px;
+  }
+  
+      48% {
         transform: translateY(0px);
-        /* height: 70px; */
+        height: 95px;
       }
-      /* 100% {
-        transform: translateY(0px);
+      51%{
+        transform: translateX(10px);
         height: 70px;
-      } */
     }
+    61%{
+      transform: translateX(-0%);
+      height: 95px;
+  }
+   
+      100% {
+        transform: translateX(200px);
+        height: 100px;
+      }
+ }  
+    
       @keyframes botax{
-        /* 0% {   
-            transform: translateX(220px);
-            height: 100px;
-          }
-         50%{
-            transform: translateX(220px);
-            height: 100px;
-        }    */
+       
         51%{
             transform: translateX(-30%);
-            height: 100px;
-        }
-        100%{
-            transform: translateX(300px); 
-           /*  bottom: 10px; */
-        }
-       /*  
-          100% {
-            transform: translateX(100px);
             height: 70px;
+        }
+       
+       
+          100% {
+            transform: translateX(200px);
+            height: 100px;
           }
- */
+ 
         }
   
